@@ -1,0 +1,14 @@
+$kind: http-request
+name: 6. PUT /api/productos/1
+url: "{{baseUrl}}/api/productos/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '{"nombre": "Teclado RGB", "precio": 420, "stock": 8}'
+scripts:
+  - type: afterResponse
+    code: pm.test("Código de estado 200", function () { pm.response.to.have.status(200); });
+    language: text/javascript
+order: 6000

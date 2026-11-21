@@ -1,0 +1,9 @@
+$kind: http-request
+name: 3. GET /api/productos/99
+url: "{{baseUrl}}/api/productos/99"
+method: GET
+scripts:
+  - type: afterResponse
+    code: pm.test("Código de estado 404", function () { pm.response.to.have.status(404); });
+    language: text/javascript
+order: 3000

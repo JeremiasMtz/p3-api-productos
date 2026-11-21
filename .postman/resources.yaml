@@ -1,0 +1,11 @@
+# Use this workspace to collaborate
+workspace:
+  id: f86a0c51-a176-41b9-8c7c-2c58d894a1af
+
+localResources:
+  collections:
+    - ../P2_Productos.postman_collection.json
+
+cloudResources:
+  collections:
+    ../postman/collections/P2 Productos: af96b24d-46f4-4af8-a2e3-346dbc8ca6f4

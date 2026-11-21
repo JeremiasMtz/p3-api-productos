@@ -1,0 +1,9 @@
+$kind: http-request
+name: 8. DELETE /api/productos/2 (otra vez)
+url: "{{baseUrl}}/api/productos/2"
+method: DELETE
+scripts:
+  - type: afterResponse
+    code: pm.test("Código de estado 404", function () { pm.response.to.have.status(404); });
+    language: text/javascript
+order: 8000

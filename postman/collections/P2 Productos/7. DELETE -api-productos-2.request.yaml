@@ -1,0 +1,9 @@
+$kind: http-request
+name: 7. DELETE /api/productos/2
+url: "{{baseUrl}}/api/productos/2"
+method: DELETE
+scripts:
+  - type: afterResponse
+    code: pm.test("Código de estado 204", function () { pm.response.to.have.status(204); });
+    language: text/javascript
+order: 7000

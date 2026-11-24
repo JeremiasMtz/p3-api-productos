@@ -6,6 +6,8 @@ localResources:
   collections:
     - ../P2_Productos.postman_collection.json
 
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
 cloudResources:
   collections:
     ../postman/collections/P2 Productos: af96b24d-46f4-4af8-a2e3-346dbc8ca6f4
